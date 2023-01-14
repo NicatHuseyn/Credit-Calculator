@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <!-- font awesome cdn link -->
+    <title>Credit Calculator</title>
+</head>
+<body>
+    
+    <section>
+        <div class="section-inner">
+            <div class="error-popup">
+                <span>
+                    <p>Rəqəmləri düzgün daxil edin</p>
+                </span>
+                <span class="closed">
+                    <i class="fa-solid fa-xmark xmark"></i>
+                </span>
+            </div>
+
+            <form class="form-control">
+                <div class="form-group">
+                    <label for="productprice" class="label">Məhsulun qiyməti</label>
+                    <input type="text" name="" id="productprice" class="form-input productprice" placeholder="Qiyməti daxil edin...">
+                </div>
+                <div class="form-group">
+                    <label for="percent" class="label">Faiz</label>
+                    <input type="text" name="" id="percent" class="form-input percent" placeholder="Aylıq faizi daxil edin...">
+                </div>
+                <div class="form-group">
+                    <label for="monthcount" class="label">Ayların sayı</label>
+                    <input type="text" name="" id="monthcount" class="form-input monthcount" placeholder="Ayların sayını daxil edin...">
+                </div>
+                <div class="form-group">
+                    <button class="btn" type="submit">HESABLA</button>
+                </div>
+            </form>
+
+            <div class="form-table">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>№</th>
+                            <th>Tarix</th>
+                            <th>Aylıq ödənməli məbləğ</th>
+                            <th>Qalıq borc</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="credit-list">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

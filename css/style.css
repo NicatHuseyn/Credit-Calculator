@@ -1,0 +1,209 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+section{
+    width: 100%;
+}
+
+section .section-inner{
+    width: 80%;
+    padding: 50px 10px;
+    margin: auto;
+}
+
+
+/* error message */
+
+.section-inner .error-popup{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+    background-color: rgb(96, 197, 197);
+    position: absolute;
+    right: 5%;
+    top: 10px;
+    display: none;
+}
+.error-popup span p{
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.error-popup .closed{
+    display: block;
+    padding: 0;
+    margin: 0;
+    text-align: end;
+    cursor: pointer;
+}
+
+.error-popup .closed .xmark{
+    font-size: 18px;
+}
+
+
+
+
+.section-inner .form-control{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.form-control .form-group .label{
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.15rem;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+.form-group .form-input{
+    padding: 5px 3px;
+    color: #000;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    outline: none;
+    letter-spacing: 1px;
+}
+.form-group .form-input::placeholder{
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0;
+}
+
+
+
+.form-group .btn{
+    padding: 13px 20px;
+    background-color: blue;
+    color: #fff;
+    font-weight: 700;
+    font-size: 15px;
+    font-family: sans-serif;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    letter-spacing: 0.5px;
+}
+
+/*  table section  */
+
+.section-inner .form-table{
+    width: 100%;
+}
+
+table{
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.7);
+}
+
+table thead tr th{
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding: 5px 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+table tbody tr td{
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding: 5px 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* media querie code for reponsive */
+
+@media screen and (max-width: 992px){
+    section{
+        width: 100%;
+    }
+
+    section .section-inner{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 847px){
+    section{
+        width: 100%;
+    }
+
+    section .section-inner{
+        width: 98%;
+    }
+
+    .section-inner .form-control .form-group{
+        margin: 0 0 10px 0;
+    }
+}
+
+@media screen and (max-width: 790px){
+    section{
+        width: 100%;
+    }
+
+    section .section-inner{
+        width: 95%;
+    }
+
+    .section-inner .form-control .form-group{
+        margin: 0 0 10px 0;
+    }
+}
+
+@media screen and (max-width: 768px){
+    section{
+        width: 100%;
+    }
+
+    section .section-inner{
+        width: 80%;
+    }
+
+    .section-inner .form-control{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .section-inner .form-control .form-group{
+        margin: 0 0 10px 0;
+    }
+}
+
+@media screen and (max-width: 576px){
+    section{
+        width: 100%;
+    }
+
+    section .section-inner{
+        width: 100%;
+    }
+
+    .section-inner .form-control{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-inner .form-control .form-group{
+        margin: 0 0 10px 0;
+    }
+}
